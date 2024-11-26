@@ -1,7 +1,13 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-    let { color = 'rgba(6, 206, 212, 0.7)' } = $props();
+    let { color, maxSize, minSize, maxSpeed, minSpeed }: {
+        color: string,
+        maxSize: number,
+        minSize: number,
+        maxSpeed: number,
+        minSpeed: number
+    } = $props();
 
     let canvas: HTMLCanvasElement;
     let ctx: CanvasRenderingContext2D;
@@ -10,10 +16,10 @@
     const embers: Ember[] = [];
     const emberCount = 200;
     const emberSettings = {
-        maxSize: 4,
-        minSize: 1,
-        maxSpeed: 7,
-        minSpeed: 1,
+        maxSize,
+        minSize,
+        maxSpeed,
+        minSpeed,
         color
     };
 
