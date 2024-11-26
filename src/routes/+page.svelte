@@ -1,18 +1,19 @@
 <script>
     import PortfolioSlider from "$lib/Components/PortfolioSlider.svelte";
     import MoneyLogo from "$lib/Logos/MoneyLogo.svelte";
+    import RightArrow from "$lib/Logos/RightArrow.svelte";
     import SearchLogo from "$lib/Logos/SearchLogo.svelte";
     import TradeMarkLogo from "$lib/Logos/TradeMarkLogo.svelte";
 </script>
 
 <div class="gap-10 flex flex-col relative">
-    <div class="px-20 pt-24 pb-96 flex justify-around items-center">
-        <h1 class="w-1/2 text-white text-6xl font-semibold">
-            Web Design<br/>
-            and Development<br/>
+    <div class="lg:px-20 pt-24 h-firstpage min-[570px]:pb-80 md:pb-96 gap-12 sm:gap-0 flex flex-col sm:flex-row justify-center min-[570px]:justify-around items-center">
+        <h1 class="w-2/3 sm:w-5/12 text-white text-5xl lg:text-6xl font-semibold">
+            Web Design
+            and Development
             you can rely on.
         </h1>
-        <div class="w-1/3 gap-4 flex flex-col">
+        <div class="w-2/3 sm:w-1/3 gap-4 flex flex-col">
             <p class="text-neutral-200 text-xl">
                 Whether the goal is to increase sales, build brand awareness, or
                 provide valuable information to your audience, Ception's here to
@@ -22,22 +23,24 @@
         </div>
     </div>
     
-    <div class="w-full absolute -bottom-56">
+    <div class="hidden min-[570px]:block w-full absolute -bottom-24 md:-bottom-56 right-10 lg:right-20">
         <PortfolioSlider />
     </div>
 </div>
 
-<div class="bg-neutral-950 h-[70rem] px-20 pt-80">
-    <div class="gap-4 flex flex-col">
+<div class="bg-neutral-950 h-[70rem] pt-40 min-[570px]:pt-80">
+    <div class="px-20 gap-4 flex flex-col">
         <h1 class="text-4xl font-black uppercase text-white">Why do you <span class="text-orange-500">need</span> a website?</h1>
-        <p class="text-xl text-neutral-300">
-            If you want to increase your revenue, you need a website. It's that simple.<br/>
-            Potential customers are find businesses online, and if you're not there.<br/>
+        <p class="w-full md:w-5/6 lg:w-2/3 text-xl text-neutral-300">
+            If you want to increase your revenue, you need a website. It's that simple.
+            Potential customers are find businesses online, and if you're not there.
             they'll find someone else who is.
         </p>
     </div>
-    <div class="py-20 gap-20 flex justify-between items-center">
-        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/half-of-consumers-consider-a-companys-website-design-crucial-to-their-opinion-of-that-brand-301274695.html">
+    <div class="min-[1200px]:px-20 py-20 gap-4 flex justify-between items-center overflow-x-auto min-[1200px]:overflow-hidden relative">
+        <div class="w-16 h-[26rem] shrink-0 block min-[1200px]:hidden"></div>
+
+        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 shrink-0 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/half-of-consumers-consider-a-companys-website-design-crucial-to-their-opinion-of-that-brand-301274695.html">
             <h3 class="text-lg text-white font-semibold uppercase">Brand:</h3>
             <p class="text-white">
                 <span class="text-ception-cyan">50%</span>
@@ -50,7 +53,7 @@
             </div>
         </a>
 
-        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative group" target="_blank" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">
+        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 shrink-0 gap-2 flex flex-col relative group" target="_blank" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">
             <h3 class="text-lg text-white font-semibold uppercase">Conversion:</h3>
             <p class="text-white">
                 <span class="text-ception-cyan">53%</span>
@@ -65,7 +68,7 @@
             </div>
         </a>
 
-        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html">
+        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 shrink-0 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html">
             <h3 class="text-lg text-white font-semibold uppercase">Discoverability:</h3>
             <p class="text-white">
                 <span class="text-ception-cyan">76%</span>
@@ -77,38 +80,7 @@
                 <SearchLogo width={200} tw="fill-none stroke-white group-hover:stroke-orange-500 stroke-2 transition-colors duration-300" />
             </div>
         </a>
+
+        <div class="w-16 h-[26rem] shrink-0 block min-[1200px]:hidden"></div>
     </div>
 </div>
-
-<div class="h-screen"></div>
-
-<!--
-<div class="px-8 py-12 gap-8 flex flex-col justify-center items-center bg-neutral-900 border-y-8 border-cyan-950">
-    <h1 class="text-4xl font-black uppercase text-white">Why do you <span class="text-ception-cyan">need</span> a website?</h1>
-    <ol class="w-full sm:w-11/12 md:w-3/4 lg:w-7/12 gap-12 flex flex-col list-decimal">
-        <li class="text-xl font-bold uppercase text-white">
-            <span class="text-2xl text-ception-cyan">50%</span>
-            of people say that their impression of a business
-            <span class="text-2xl text-ception-cyan">depends</span>
-            on the company’s website design.
-            <sup class="text-yellow-500"><a target="_blank" href="https://www.prnewswire.com/news-releases/half-of-consumers-consider-a-companys-website-design-crucial-to-their-opinion-of-that-brand-301274695.html">(1)</a></sup>
-        </li>
-        <li class="text-xl font-bold uppercase text-white">
-            <span class="text-2xl text-ception-cyan">53%</span>
-            of visits are
-            <span class="text-2xl text-ception-cyan">abandoned</span>
-            if a mobile site takes longer than
-            <span class="text-2xl text-ception-cyan">3 seconds</span>
-            to load.
-            <sup class="text-yellow-500"><a target="_blank" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">(2)</a></sup>
-        </li>
-        <li class="text-xl font-bold uppercase text-white">
-            <span class="text-2xl text-ception-cyan">76%</span>
-            of people find businesses online
-            <span class="text-2xl text-ception-cyan">BEFORE</span>
-            visiting them in person.
-            <sup class="text-yellow-500"><a target="_blank" href="https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html">(3)</a></sup>
-        </li>
-    </ol>
-</div>
--->
