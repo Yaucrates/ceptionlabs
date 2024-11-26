@@ -1,5 +1,8 @@
 <script>
     import PortfolioSlider from "$lib/Components/PortfolioSlider.svelte";
+    import MoneyLogo from "$lib/Logos/MoneyLogo.svelte";
+    import SearchLogo from "$lib/Logos/SearchLogo.svelte";
+    import TradeMarkLogo from "$lib/Logos/TradeMarkLogo.svelte";
 </script>
 
 <div class="gap-10 flex flex-col relative">
@@ -26,7 +29,7 @@
 
 <div class="bg-neutral-950 h-[70rem] px-20 pt-80">
     <div class="gap-4 flex flex-col">
-        <h1 class="text-4xl font-black uppercase text-white">Why do you <span class="text-ception-cyan">need</span> a website?</h1>
+        <h1 class="text-4xl font-black uppercase text-white">Why do you <span class="text-orange-500">need</span> a website?</h1>
         <p class="text-xl text-neutral-300">
             If you want to increase your revenue, you need a website. It's that simple.<br/>
             Potential customers are find businesses online, and if you're not there.<br/>
@@ -34,7 +37,7 @@
         </p>
     </div>
     <div class="py-20 gap-20 flex justify-between items-center">
-        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative" target="_blank" href="https://www.prnewswire.com/news-releases/half-of-consumers-consider-a-companys-website-design-crucial-to-their-opinion-of-that-brand-301274695.html">
+        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/half-of-consumers-consider-a-companys-website-design-crucial-to-their-opinion-of-that-brand-301274695.html">
             <h3 class="text-lg text-white font-semibold uppercase">Brand:</h3>
             <p class="text-white">
                 <span class="text-ception-cyan">50%</span>
@@ -42,9 +45,12 @@
                 <span class="text-ception-cyan">depends</span>
                 on the company’s website design.
             </p>
+            <div class="grow flex justify-center items-center">
+                <TradeMarkLogo width={200} tw="fill-white group-hover:fill-orange-500 transition-colors duraiton-300" />
+            </div>
         </a>
 
-        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative" target="_blank" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">
+        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative group" target="_blank" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">
             <h3 class="text-lg text-white font-semibold uppercase">Conversion:</h3>
             <p class="text-white">
                 <span class="text-ception-cyan">53%</span>
@@ -54,14 +60,12 @@
                 <span class="text-ception-cyan">3 seconds</span>
                 to load.
             </p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                <path d="M21 21l-6 -6" />
-            </svg>
+            <div class="grow flex justify-center items-center">
+                <MoneyLogo width={200} tw="fill-none stroke-white group-hover:stroke-orange-500 stroke-2 transition-colors duration-300" />
+            </div>
         </a>
 
-        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative" target="_blank" href="https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html">
+        <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html">
             <h3 class="text-lg text-white font-semibold uppercase">Discoverability:</h3>
             <p class="text-white">
                 <span class="text-ception-cyan">76%</span>
@@ -69,6 +73,9 @@
                 <span class="text-ception-cyan">BEFORE</span>
                 visiting them in person.
             </p>
+            <div class="grow flex justify-center items-center">
+                <SearchLogo width={200} tw="fill-none stroke-white group-hover:stroke-orange-500 stroke-2 transition-colors duration-300" />
+            </div>
         </a>
     </div>
 </div>
