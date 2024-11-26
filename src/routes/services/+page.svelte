@@ -3,7 +3,7 @@
     import TopRightArrow from "$lib/Logos/TopRightArrow.svelte";
 </script>
 
-<main class="h-full flex flex-col lg:flex-row">
+<main class="h-firstpage flex flex-col lg:flex-row">
     <div class="w-full lg:w-1/2 h-[36rem] lg:h-full flex justify-center items-center overflow-clip relative">
         <MoonlightScene />
         <h1 class="text-5xl min-[500px]:text-6xl sm:text-7xl text-white font-black text-end uppercase bottom-6 right-8 lg:bottom-12 lg:right-16 absolute z-20">Explore<br/>Our Services</h1>

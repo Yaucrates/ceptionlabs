@@ -1,6 +1,8 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
+    let { color = 'rgba(6, 206, 212, 0.7)' } = $props();
+
     let canvas: HTMLCanvasElement;
     let ctx: CanvasRenderingContext2D;
 
@@ -12,7 +14,7 @@
         minSize: 1,
         maxSpeed: 7,
         minSpeed: 1,
-        color: 'rgba(6, 206, 212, 0.7)',
+        color
     };
 
     const handleResize = () => {
@@ -54,7 +56,7 @@
             this.speed = emberSettings.minSpeed + Math.random() * (emberSettings.maxSpeed - emberSettings.minSpeed);
             this.opacity = 1;
             this.fadeRate = Math.random() * 0.02 + 0.005;
-            this.color = emberSettings.color;
+            this.color = color;
         }
 
         update() {

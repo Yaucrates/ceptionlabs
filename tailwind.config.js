@@ -5,9 +5,13 @@ export default {
         extend: {
             colors: {
                 ception: {
+                    background: "#141414",
                     glassyWhite: "rgba(255, 255, 255, 0.1)",
                     cyan: "#06CED4"
                 }
+            },
+            height: {
+                firstpage: "calc(100vh - 89px)",
             }
         },
     },

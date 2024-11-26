@@ -3,9 +3,9 @@
     import "../app.css"
 </script>
 
-<div class="h-full flex flex-col">
+<div class="min-h-screen flex flex-col">
     <Header />
-    <div class="flex-1">
+    <div class="flex-grow relative">
         <slot/>
     </div>
 </div>
