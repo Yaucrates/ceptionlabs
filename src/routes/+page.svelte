@@ -1,7 +1,6 @@
 <script>
     import PortfolioSlider from "$lib/Components/PortfolioSlider.svelte";
     import MoneyLogo from "$lib/Logos/MoneyLogo.svelte";
-    import RightArrow from "$lib/Logos/RightArrow.svelte";
     import SearchLogo from "$lib/Logos/SearchLogo.svelte";
     import TradeMarkLogo from "$lib/Logos/TradeMarkLogo.svelte";
 </script>
