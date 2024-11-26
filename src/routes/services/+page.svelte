@@ -1,6 +1,4 @@
-Services
-
-<!-- <script>
+<script>
     import MoonlightScene from "$lib/Components/MoonlightScene/MoonlightScene.svelte";
     import TopRightArrow from "$lib/Logos/TopRightArrow.svelte";
 </script>
@@ -39,4 +37,4 @@ Services
             </div>
         </div>
     </div>
-</main> -->
+</main>
