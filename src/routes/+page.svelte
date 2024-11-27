@@ -32,7 +32,7 @@
         <h1 class="text-4xl font-black uppercase text-white">Why do you <span class="text-orange-500">need</span> a website?</h1>
         <p class="w-full md:w-5/6 lg:w-2/3 text-xl text-neutral-300">
             If you want to increase your revenue, you need a website. It's that simple.
-            Potential customers are find businesses online, and if you're not there,
+            Potential customers find businesses online, and if you're not there,
             they'll find someone else who is.
         </p>
     </div>

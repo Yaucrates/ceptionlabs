@@ -122,7 +122,7 @@
     });
 </script>
 
-<audio bind:this={audio} src="Buddha.mp3" preload="auto"></audio>
+<audio bind:this={audio} src="Buddha.mp3" preload="auto" loop></audio>
 
 <button onclick={playAudio} aria-labelledby="music player" class="w-fit h-fit">
     <canvas
