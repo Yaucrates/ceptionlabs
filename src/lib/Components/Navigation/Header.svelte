@@ -5,7 +5,7 @@
     import MobileNav from "./MobileNav.svelte";
 
     import { navToggle } from "./navLogic.svelte";
-    import BackgroundMusic from "../BackgroundMusic.svelte";
+    import BackgroundMusic from "./BackgroundMusic.svelte";
 </script>
 
 <nav class="flex items-center border-b-[1px] border-ception-glassyWhite">
@@ -26,7 +26,8 @@
     <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-8 border-l-[1px] border-ception-glassyWhite box-border">
         <a href="/contact" class="text-white uppercase">Contact</a>
     </div>
-    <div class="flex-1 lg:hidden flex justify-end items-center px-12 py-6 border-l-[1px] border-ception-glassyWhite box-border">
+    <div class="flex-1 lg:hidden gap-8 flex justify-end items-center px-12 py-6 border-l-[1px] border-ception-glassyWhite box-border">
+        <BackgroundMusic />
         <button class="z-50" onclick={navToggle}><HamburgerMenu width={40}/></button>
     </div>
 </nav>
