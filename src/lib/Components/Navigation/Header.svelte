@@ -2,6 +2,9 @@
     import NameLogo from "$lib/Logos/NameLogo.svelte";
     import HamburgerMenu from "$lib/Components/Navigation/HamburgerMenu.svelte";
     import SymbolicLogo from "$lib/Logos/SymbolicLogo.svelte";
+    import MobileNav from "./MobileNav.svelte";
+
+    import { navToggle } from "./navLogic.svelte";
 </script>
 
 <nav class="flex items-center border-b-[1px] border-ception-glassyWhite">
@@ -22,6 +25,8 @@
         <a href="/contact" class="text-white uppercase">Contact</a>
     </div>
     <div class="flex-1 lg:hidden flex justify-end items-center px-12 py-6 border-l-[1px] border-ception-glassyWhite box-border">
-        <button onclick={() => {}}><HamburgerMenu width={40}/></button>
+        <button class="z-50" onclick={navToggle}><HamburgerMenu width={40}/></button>
     </div>
 </nav>
+
+<MobileNav />
