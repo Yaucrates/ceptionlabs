@@ -5,6 +5,7 @@
     import MobileNav from "./MobileNav.svelte";
 
     import { navToggle } from "./navLogic.svelte";
+    import BackgroundMusic from "../BackgroundMusic.svelte";
 </script>
 
 <nav class="flex items-center border-b-[1px] border-ception-glassyWhite">
@@ -12,8 +13,9 @@
         <div class="hidden sm:block"><NameLogo width={150} /></div>
         <div class="sm:hidden block"><SymbolicLogo width={40} /></div>
     </a>
-    <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-8 border-l-[1px] border-ception-glassyWhite box-border">
-        <a href="/about" class="text-white uppercase">About</a>
+    <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-7 border-l-[1px] border-ception-glassyWhite box-border">
+        <BackgroundMusic />
+        <!-- <a href="/about" class="text-white uppercase">About</a> -->
     </div>
     <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-8 border-l-[1px] border-ception-glassyWhite box-border">
         <a href="/services" class="text-white uppercase">Services</a>
