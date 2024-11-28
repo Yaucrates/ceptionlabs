@@ -124,12 +124,12 @@
 
 <audio bind:this={audio} src="Buddha.mp3" preload="auto" loop></audio>
 
-<button onclick={playAudio} aria-labelledby="music player" class="w-fit h-fit">
+<button onclick={playAudio} aria-labelledby="music player" class="w-fit h-fit border-[1px] border-neutral-800 rounded-full">
     <canvas
         bind:this={canvas}
         id="canvas"
-        width="30"
-        height="30"
-        class="bg-transparent border-[1px] border-neutral-800 rounded-full"
+        width="24"
+        height="24"
+        class="bg-transparent p-[8px]"
     ></canvas>
 </button>

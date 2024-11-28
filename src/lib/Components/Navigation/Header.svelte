@@ -1,6 +1,5 @@
 <script>
     import NameLogo from "$lib/Logos/NameLogo.svelte";
-    import HamburgerMenu from "$lib/Components/Navigation/HamburgerMenu.svelte";
     import SymbolicLogo from "$lib/Logos/SymbolicLogo.svelte";
     import MobileNav from "./MobileNav.svelte";
 
@@ -8,28 +7,19 @@
     import BackgroundMusic from "./BackgroundMusic.svelte";
 </script>
 
-<nav class="flex items-center border-b-[1px] border-ception-glassyWhite">
-    <a href="/" class="flex-1 lg:flex-none px-12 lg:w-1/3 box-border">
+<nav class="fixed w-full px-8 py-4 flex justify-between items-center border-ception-glassyWhite z-10">
+    <a href="/" class="flex justify-center items-center">
         <div class="hidden sm:block"><NameLogo width={150} /></div>
         <div class="sm:hidden block"><SymbolicLogo width={40} /></div>
     </a>
-    <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-7 border-l-[1px] border-ception-glassyWhite box-border">
+    <div class="gap-6 flex justify-center items-center relative">
         <BackgroundMusic />
-        <!-- <a href="/about" class="text-white uppercase">About</a> -->
-    </div>
-    <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-8 border-l-[1px] border-ception-glassyWhite box-border">
-        <a href="/services" class="text-white uppercase">Services</a>
-    </div>
-    <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-8 border-l-[1px] border-ception-glassyWhite box-border">
-        <a href="/portfolio" class="text-white uppercase">Portfolio</a>
-    </div>
-    <div class="flex-1 hidden lg:flex justify-center items-center px-12 py-8 border-l-[1px] border-ception-glassyWhite box-border">
-        <a href="/contact" class="text-white uppercase">Contact</a>
-    </div>
-    <div class="flex-1 lg:hidden gap-8 flex justify-end items-center px-12 py-6 border-l-[1px] border-ception-glassyWhite box-border">
-        <BackgroundMusic />
-        <button class="z-50" onclick={navToggle}><HamburgerMenu width={40}/></button>
+        <a href="/contact" class="text-white bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-3xl duration-300 transition-colors">
+            Let's Talk
+        </a>
+        <button class="gap-4 flex justify-center items-center border-2 px-4 py-2 rounded-3xl border-neutral-800 text-white z-50" onclick={navToggle}>
+            Menu
+        </button>
+        <MobileNav />
     </div>
 </nav>
-
-<MobileNav />

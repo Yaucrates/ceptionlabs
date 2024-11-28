@@ -3,12 +3,12 @@
     import TopRightArrow from "$lib/Logos/TopRightArrow.svelte";
 </script>
 
-<main class="lg:h-firstpage flex flex-col lg:flex-row">
-    <div class="w-full lg:w-1/2 min-h-[36rem] h-[36rem] lg:h-full lg:min-h-full flex justify-center items-center overflow-clip relative">
+<main class="lg:h-[calc(100vh-76px)] mt-[76px] flex flex-col lg:flex-row">
+    <div class="w-full lg:w-1/2 min-h-[36rem] h-[36rem] lg:h-full lg:min-h-full border-t-[1px] border-neutral-800 flex justify-center items-center overflow-clip relative">
         <MoonlightScene />
         <h1 class="text-5xl min-[500px]:text-6xl sm:text-7xl text-white font-black text-end uppercase bottom-6 right-8 lg:bottom-12 lg:right-16 absolute z-20">Explore<br/>Our Services</h1>
     </div>
-    <div class="w-full lg:w-1/2 flex flex-col border-l-0 lg:border-l-[1px] border-ception-glassyWhite box-border">
+    <div class="w-full lg:w-1/2 flex flex-col border-t-[1px] border-l-0 lg:border-l-[1px] border-ception-glassyWhite box-border">
         <div class="p-8 min-h-[15.5rem] lg:min-h-0 lg:h-1/3 gap-4 flex flex-col justify-between lg:border-t-0 border-t-[1px] border-ception-glassyWhite box-border text-white uppercase">
             <h3 class="text-xl font-medium">Maintenance & Hosting<br/>Service</h3>
             <div class="w-full flex justify-end items-center gap-4">
