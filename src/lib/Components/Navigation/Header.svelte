@@ -30,6 +30,6 @@
         <button class="gap-4 flex justify-center items-center border-2 px-4 py-2 rounded-3xl border-neutral-800 text-white z-50" onclick={navToggle}>
             Menu
         </button>
-        <MobileNav {expanded}/>
+        <MobileNav {expanded} {navToggle} />
     </div>
 </nav>
