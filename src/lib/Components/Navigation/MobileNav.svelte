@@ -1,13 +1,8 @@
 <script lang="ts">
     import RightArrow from "$lib/Logos/RightArrow.svelte";
-    import { getNavState } from "./navLogic.svelte";
     import { page } from "$app/stores";
 
-    let expanded = $state(false);
-
-    $effect(() => {
-        expanded = getNavState();
-    })
+    let { expanded }: { expanded: boolean } = $props();
 </script>
 
 <nav class={`${expanded ? "opacity-100 translate-x-0" : "opacity-0 translate-y-10 rotate-3"} w-80 flex flex-col absolute top-14 right-0 rounded-lg transition-all duration-300 bg-neutral-900`}>

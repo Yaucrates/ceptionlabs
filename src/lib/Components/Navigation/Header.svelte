@@ -2,9 +2,12 @@
     import NameLogo from "$lib/Logos/NameLogo.svelte";
     import SymbolicLogo from "$lib/Logos/SymbolicLogo.svelte";
     import MobileNav from "./MobileNav.svelte";
-
-    import { navToggle } from "./navLogic.svelte";
     import BackgroundMusic from "./BackgroundMusic.svelte";
+
+    let expanded = $state(false);
+    let navToggle = () => {
+        expanded = !expanded;
+    }
 </script>
 
 <nav class="fixed w-full px-8 py-4 flex justify-between items-center border-ception-glassyWhite z-10">
@@ -20,6 +23,6 @@
         <button class="gap-4 flex justify-center items-center border-2 px-4 py-2 rounded-3xl border-neutral-800 text-white z-50" onclick={navToggle}>
             Menu
         </button>
-        <MobileNav />
+        <MobileNav {expanded}/>
     </div>
 </nav>
