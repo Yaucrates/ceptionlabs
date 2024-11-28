@@ -12,6 +12,9 @@ export default {
                 cyan: "#06CED4"
             }
         },
+        screens: {
+            xs: '400px',
+        }
     }
   },
 

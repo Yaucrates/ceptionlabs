@@ -1,8 +1,9 @@
 <script>
     import Footer from "$lib/Components/Navigation/Footer.svelte";
-import Header from "$lib/Components/Navigation/Header.svelte";
-    let { children } = $props();
+    import Header from "$lib/Components/Navigation/Header.svelte";
     import "../app.css"
+
+    let { children } = $props();
 </script>
 
 <div class="min-h-screen flex flex-col">

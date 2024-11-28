@@ -1,15 +1,16 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 
+    let { size, tw = "" }: { size: number, tw?: string } = $props(); 
+    
+    // Animated data starts from zeros
+    let animatedData = $state([0, 0, 0, 0, 0, 0]);
+
     // Sample data for six axes
     let data = [70, 80, 90, 100, 80, 100];
     let labels = ['Delivery Speed', 'Creativity', 'UX', 'Performance', 'UI', 'Quality'];
 
-    // Animated data starts from zeros
-    let animatedData = [0, 0, 0, 0, 0, 0];
-
     const maxValue = 100; // Maximum value for scaling
-    const size = 300; // SVG size
     const center = size / 2;
     const radius = center - 20; // Radius of the chart
 
@@ -58,7 +59,7 @@
     }
 </style>
   
-<svg width="{size}" height="{size}">
+<svg width="{size}" height="{size}" class={tw}>
     <!-- Draw axes -->
     {#each Array(6) as _, i}
         <line

@@ -6,8 +6,8 @@
 </script>
 
 <div class="gap-10 flex flex-col relative">
-    <div class="lg:px-20 pt-24 h-firstpage min-[570px]:pb-80 md:pb-96 gap-12 sm:gap-0 flex flex-col sm:flex-row justify-center min-[570px]:justify-around items-center">
-        <h1 class="w-2/3 sm:w-5/12 text-white text-5xl lg:text-6xl font-semibold">
+    <div class="lg:px-20 pt-24 h-firstpage pb-24 min-[570px]:pb-80 md:pb-96 gap-12 sm:gap-0 flex flex-col sm:flex-row justify-center min-[570px]:justify-around items-center">
+        <h1 class="w-2/3 sm:w-5/12 text-white text-3xl xs:text-5xl lg:text-6xl font-semibold">
             Web Design
             and Development
             you can rely on.
@@ -28,16 +28,16 @@
 </div>
 
 <div class="bg-neutral-950 h-[70rem] pt-40 min-[570px]:pt-80">
-    <div class="px-20 gap-4 flex flex-col">
-        <h1 class="text-4xl font-black uppercase text-white">Why do you <span class="text-orange-500">need</span> a website?</h1>
+    <div class="px-12 xs:px-20 gap-4 flex flex-col">
+        <h1 class="text-2xl xs:text-4xl font-black uppercase text-white">Why do you <span class="text-orange-500">need</span> a website?</h1>
         <p class="w-full md:w-5/6 lg:w-2/3 text-xl text-neutral-300">
             If you want to increase your revenue, you need a website. It's that simple.
             Potential customers find businesses online, and if you're not there,
             they'll find someone else who is.
         </p>
     </div>
-    <div class="min-[1200px]:px-20 py-20 gap-4 flex justify-between items-center overflow-x-auto min-[1200px]:overflow-hidden relative">
-        <div class="w-16 h-[26rem] shrink-0 block min-[1200px]:hidden"></div>
+    <div class="pb-12 min-[1200px]:px-20 py-20 gap-4 flex justify-between items-center overflow-x-auto min-[1200px]:overflow-hidden relative">
+        <div class="w-8 xs:w-16 h-[26rem] shrink-0 block min-[1200px]:hidden"></div>
 
         <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 shrink-0 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/half-of-consumers-consider-a-companys-website-design-crucial-to-their-opinion-of-that-brand-301274695.html">
             <h3 class="text-lg text-white font-semibold uppercase">Brand:</h3>
@@ -80,6 +80,6 @@
             </div>
         </a>
 
-        <div class="w-16 h-[26rem] shrink-0 block min-[1200px]:hidden"></div>
+        <div class="w-8 xs:w-16 h-[26rem] shrink-0 block min-[1200px]:hidden"></div>
     </div>
 </div>

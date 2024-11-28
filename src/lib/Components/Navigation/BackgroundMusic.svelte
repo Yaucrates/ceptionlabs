@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { currentlyPlaying } from "./playbackStore";
 
     let isPlaying = false;
     let audio: HTMLAudioElement;
@@ -13,21 +12,6 @@
     let isFadingIn = false;
     let isFadingOut = false;
 
-    // Subscribe to the shared store
-    let id = Math.random().toString(); // Unique identifier for this instance
-    let currentId: string | null;
-
-    $: if (currentId !== id && isPlaying) {
-        // Stop playing if another instance starts
-        isPlaying = false;
-        audio.pause();
-        isFadingOut = true; // Trigger fade out animation
-    }
-
-    currentlyPlaying.subscribe((value) => {
-        currentId = value;
-    });
-
     // Function to play or pause the audio
     const playAudio = () => {
         if (!audio) return;
@@ -36,13 +20,11 @@
             isPlaying = false;
             audio.pause();
             isFadingOut = true;
-            currentlyPlaying.set(null); // Clear the shared state
         } else {
             isPlaying = true;
             audio.play();
             amplitude = 0;
             isFadingIn = true;
-            currentlyPlaying.set(id); // Set this instance as currently playing
             startAnimation();
         }
     };
@@ -124,10 +106,9 @@
 
 <audio bind:this={audio} src="Buddha.mp3" preload="auto" loop></audio>
 
-<button onclick={playAudio} aria-labelledby="music player" class="w-fit h-fit border-[1px] border-neutral-800 rounded-full">
+<button on:click={playAudio} aria-label="music player" class="w-fit h-fit border-[1px] border-neutral-800 rounded-full">
     <canvas
         bind:this={canvas}
-        id="canvas"
         width="24"
         height="24"
         class="bg-transparent p-[8px]"
