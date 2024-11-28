@@ -1,4 +1,5 @@
 <script>
+    import CaseStudyChart from "$lib/Components/CaseStudyChart.svelte";
     import ProjectCard from "$lib/Components/ProjectCard.svelte";
 
     let projects = [
@@ -25,16 +26,25 @@
     ]
 </script>
 
-<div class="w-full px-16 py-16 gap-x-4 gap-y-12 grid grid-cols-1 lg:grid-cols-2">
-    {#each projects as project}
-        <div class="w-full flex justify-center items-center">
-            <ProjectCard
-                title={project.title}
-                subtitle={project.subtitle}
-                description={project.description}
-                href={project.href}
-                src={project.src}
-            />
+<div class="flex flex-col">
+    <div class="pb-8 pt-20 gap-16 flex justify-center items-center">
+        <div class="w-1/4 gap-4 flex flex-col">
+            <h1 class="text-neutral-100 text-4xl uppercase font-black">Case Studies</h1>
+            <p class="text-neutral-300 text-xl">A closer look at what the results we've delivered to clients in the past.</p>
         </div>
-    {/each}
+        <CaseStudyChart />
+    </div>
+    <div class="px-16 py-16 gap-x-4 gap-y-12 grid grid-cols-1 lg:grid-cols-2">
+        {#each projects as project}
+            <div class="w-full flex justify-center items-center">
+                <ProjectCard
+                    title={project.title}
+                    subtitle={project.subtitle}
+                    description={project.description}
+                    href={project.href}
+                    src={project.src}
+                />
+            </div>
+        {/each}
+    </div>
 </div>
