@@ -18,7 +18,7 @@
                 provide valuable information to your audience, Ception's here to
                 help you achieve success!
             </p>
-            <a href="/services" class="w-fit py-2 px-4 text-white text-lg font-medium bg-red-700 transition-colors duration-300 z-10 rounded-t-full rounded-r-full">Check Us Out</a>
+            <a href="/services" class="w-fit py-2 px-4 text-white text-lg font-medium bg-red-700 transition-colors duration-300 rounded-t-full rounded-r-full">Check Us Out</a>
         </div>
     </div>
     
