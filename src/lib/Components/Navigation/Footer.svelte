@@ -3,7 +3,7 @@
         <div class="w-full lg:w-1/2 gap-8 flex flex-col">
             <h3 class="text-xl uppercase font-bold text-neutral-100">Important Links:</h3>
             <div class="gap-x-24 gap-y-8 grid grid-cols-2">
-                <a href="/" class="text-lg text-neutral-200">Home</a>
+                <a href="/about" class="text-lg text-neutral-200">About</a>
                 <a href="/services" class="text-lg text-neutral-200">Services</a>
                 <a href="/portfolio" class="text-lg text-neutral-200">Portfolio</a>
                 <a href="/contact" class="text-lg text-neutral-200">Contact</a>

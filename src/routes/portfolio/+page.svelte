@@ -27,7 +27,7 @@
 </script>
 
 <div class="flex flex-col">
-    <div class="pb-8 pt-32 gap-16 flex justify-center items-center">
+    <div class="pb-8 pt-20 gap-16 flex justify-center items-center">
         <div class="w-1/4 gap-4 flex flex-col">
             <h1 class="text-neutral-100 text-4xl uppercase font-black">Case Studies</h1>
             <p class="text-neutral-300 text-xl">A closer look at what the results we've delivered to clients in the past.</p>

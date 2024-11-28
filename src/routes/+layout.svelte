@@ -7,7 +7,7 @@ import Header from "$lib/Components/Navigation/Header.svelte";
 
 <div class="min-h-screen flex flex-col">
     <Header />
-    <div class="flex-grow relative">
+    <div class="mt-[76px] flex-grow relative">
         {@render children()}
     </div>
 </div>

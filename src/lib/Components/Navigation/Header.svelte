@@ -4,10 +4,17 @@
     import MobileNav from "./MobileNav.svelte";
     import BackgroundMusic from "./BackgroundMusic.svelte";
 
-    let expanded = $state(false);
+    let expanded = false;
+
     let navToggle = () => {
         expanded = !expanded;
-    }
+        // Toggle scrolling
+        if (expanded) {
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        } else {
+            document.body.style.overflow = ''; // Enable scrolling
+        }
+    };
 </script>
 
 <nav class="fixed w-full px-8 py-4 flex justify-between items-center border-ception-glassyWhite z-10">
