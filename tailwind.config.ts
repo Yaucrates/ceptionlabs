@@ -12,6 +12,9 @@ export default {
                 cyan: "#06CED4"
             }
         },
+        height: {
+            firstpage: 'calc(100vh - 76px)',
+        },
         screens: {
             xs: '400px',
         }

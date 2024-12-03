@@ -1,9 +1,9 @@
-<footer class="border-t-2 flex flex-col border-neutral-800">
+<footer class="border-t-[1px] flex flex-col border-ception-glassyWhite">
     <div class="px-12 sm:px-20 py-8 gap-16 lg:gap-0 flex flex-col lg:flex-row justify-between items-center">
         <div class="w-full lg:w-1/2 gap-8 flex flex-col">
             <h3 class="text-xl uppercase font-bold text-neutral-100">Important Links:</h3>
             <div class="gap-x-24 gap-y-8 grid grid-cols-2">
-                <a href="/about" class="text-lg text-neutral-200">About</a>
+                <a href="/" class="text-lg text-neutral-200">Home</a>
                 <a href="/services" class="text-lg text-neutral-200">Services</a>
                 <a href="/portfolio" class="text-lg text-neutral-200">Portfolio</a>
                 <a href="/contact" class="text-lg text-neutral-200">Contact</a>
@@ -14,5 +14,5 @@
             <p class="text-neutral-200 text-xl">We're excited to provide you with anything that your business needs in order to develop and grow.</p>
         </div>
     </div>
-    <div class="p-10 border-t-2 flex justify-center items-center border-neutral-800 text-neutral-300">© 2024, CeptionLabs.</div>
+    <div class="p-10 border-t-[1px] flex justify-center items-center border-ception-glassyWhite text-neutral-300">© 2024, CeptionLabs.</div>
 </footer>

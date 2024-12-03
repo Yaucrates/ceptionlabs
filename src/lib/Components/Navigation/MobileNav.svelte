@@ -6,8 +6,8 @@
 </script>
 
 <nav class="{expanded ? "opacity-100 translate-x-0" : "opacity-0 translate-y-10 translate-x-96 -rotate-6"} w-60 xs:w-80 flex flex-col absolute top-14 right-0 rounded-lg transition-all duration-500 bg-neutral-900">
-    <a href="/about" onclick={navToggle} class="px-8 py-4 flex justify-between items-center w-full uppercase text-white text-2xl font-bold group rounded-lg {$page.url.pathname === "/about" && "bg-cyan-700"}">
-        About
+    <a href="/" onclick={navToggle} class="px-8 py-4 flex justify-between items-center w-full uppercase text-white text-2xl font-bold group rounded-lg {$page.url.pathname === "/" && "bg-cyan-700"}">
+        Home
         <RightArrow width={50} tw="stroke-white opacity-0 group-hover:opacity-100 group-hover:rotate-[360deg] transition-all duration-300" />
     </a>
     <a href="/services" onclick={navToggle} class="px-8 py-4 flex justify-between items-center w-full uppercase text-white text-2xl font-bold group rounded-lg {$page.url.pathname === "/services" && "bg-cyan-700"}">
