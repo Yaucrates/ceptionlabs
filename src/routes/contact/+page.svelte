@@ -6,11 +6,11 @@
     <div class="w-full lg:w-1/2 h-full p-8 sm:p-20">
         <div class="w-full h-full group rounded-3xl overflow-hidden relative">
             <img src="TallCoolOwner.webp" alt="The Agency Owner" width="918" height="1528" class="h-full aspect-square object-cover rounded-3xl"/>
-            <div class="gap-2 p-4 sm:p-10 flex flex-col absolute left-0 bottom-0 z-10">
-                <SymbolicLogo width={50} tw="hidden sm:block"/>
-                <SymbolicLogo width={30} tw="sm:hidden block"/>
-                <h1 class="uppercase text-xl sm:text-3xl text-white font-black">Contact Us</h1>
-                <p class="text-sm sm:text-xl text-neutral-200">No matter what you need, Ception's right here to help. We promise to get back to any emails within 24 hours!</p>
+            <div class="gap-2 p-4 xs:p-10 flex flex-col absolute left-0 bottom-0 z-10">
+                <SymbolicLogo width={50} tw="hidden xs:block"/>
+                <SymbolicLogo width={30} tw="xs:hidden block"/>
+                <h1 class="uppercase text-xl xs:text-3xl text-white font-black">Contact Us</h1>
+                <p class="text-sm xs:text-xl text-neutral-200">No matter what you need, Ception's right here to help. We promise to get back to any emails within 24 hours!</p>
             </div>
 
             <div class="opacity-100 group-hover:opacity-0 bg-gradient-to-t from-ception-background/40 to-transparent w-full h-full top-0 left-0 absolute transition-opacity duration-300"></div>
