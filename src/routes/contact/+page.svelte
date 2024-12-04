@@ -2,14 +2,15 @@
     import SymbolicLogo from "$lib/Logos/SymbolicLogo.svelte";
 </script>
 
-<div class="h-firstpage gap-4 flex justify-center items-center">
-    <div class="w-1/2 h-full p-20">
+<div class="lg:h-firstpage gap-4 flex flex-col lg:flex-row justify-center items-center">
+    <div class="w-full lg:w-1/2 h-full p-8 sm:p-20">
         <div class="w-full h-full group rounded-3xl overflow-hidden relative">
-            <img src="TallCoolOwner.webp" alt="The Agency Owner" width="918" height="1528" class="h-full object-cover rounded-3xl"/>
-            <div class="gap-2 p-10 flex flex-col absolute left-0 bottom-0 z-10">
-                <SymbolicLogo width={50}/>
-                <h1 class="uppercase text-3xl text-white font-black">Contact Us</h1>
-                <p class="text-xl text-neutral-200">No matter what you need, Ception's right here to help. We promise to get back to any emails within 24 hours!</p>
+            <img src="TallCoolOwner.webp" alt="The Agency Owner" width="918" height="1528" class="h-full aspect-square object-cover rounded-3xl"/>
+            <div class="gap-2 p-4 sm:p-10 flex flex-col absolute left-0 bottom-0 z-10">
+                <SymbolicLogo width={50} tw="hidden sm:block"/>
+                <SymbolicLogo width={30} tw="sm:hidden block"/>
+                <h1 class="uppercase text-xl sm:text-3xl text-white font-black">Contact Us</h1>
+                <p class="text-sm sm:text-xl text-neutral-200">No matter what you need, Ception's right here to help. We promise to get back to any emails within 24 hours!</p>
             </div>
 
             <div class="opacity-100 group-hover:opacity-0 bg-gradient-to-t from-ception-background/40 to-transparent w-full h-full top-0 left-0 absolute transition-opacity duration-300"></div>
@@ -18,10 +19,10 @@
         </div>
     </div>
 
-    <div class="w-1/2 px-8 gap-8 flex flex-col justify-center items-center">
+    <div class="w-full sm:w-5/6 lg:w-1/2 px-8 pb-24 lg:pb-0 gap-8 flex flex-col justify-center items-center">
         <div class="relative">
             <h1 class="font-bold text-6xl text-white relative z-10">Get in touch<span class="uppercase font-black text-cyan-600">.</span></h1>
-            <svg class="opacity-50 absolute w-full -bottom-12 z-0" width="1473" height="113" viewBox="0 0 1473 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="opacity-50 hidden sm:block absolute w-full -bottom-12 z-0" width="1473" height="113" viewBox="0 0 1473 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 52.5C809.5 23.5004 689 177.5 747.5 52.5C806 -72.5003 1003.5 129.5 1470 24.9999" stroke="#0891B2" stroke-width="50"/>
             </svg>
         </div>
