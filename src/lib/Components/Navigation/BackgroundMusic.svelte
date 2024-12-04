@@ -106,7 +106,7 @@
 
 <audio bind:this={audio} src="Buddha.mp3" preload="auto" loop></audio>
 
-<button on:click={playAudio} aria-label="music player" class="w-fit h-fit border-[1px] border-neutral-800 rounded-full">
+<button onclick={playAudio} aria-label="music player" class="w-fit h-fit border-[1px] border-neutral-800 rounded-full">
     <canvas
         bind:this={canvas}
         width="24"

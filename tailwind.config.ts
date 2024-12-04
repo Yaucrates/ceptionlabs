@@ -10,6 +10,9 @@ export default {
                 background: "#141414",
                 glassyWhite: "rgba(255, 255, 255, 0.1)",
                 cyan: "#06CED4"
+            },
+            neutral: {
+                850: "#1f1f1f"
             }
         },
         height: {

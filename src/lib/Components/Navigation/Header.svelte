@@ -4,7 +4,7 @@
     import MobileNav from "./MobileNav.svelte";
     import BackgroundMusic from "./BackgroundMusic.svelte";
 
-    let expanded = false;
+    let expanded = $state(false);
 
     let navToggle = () => {
         expanded = !expanded;
@@ -17,7 +17,7 @@
     };
 </script>
 
-<nav class="fixed w-full px-8 py-4 flex justify-between items-center border-ception-glassyWhite z-10">
+<nav class="fixed w-full px-8 py-4 flex justify-between items-center z-10">
     <a href="/" class="flex justify-center items-center">
         <div class="hidden sm:block"><NameLogo width={150} /></div>
         <div class="sm:hidden block"><SymbolicLogo width={40} /></div>
