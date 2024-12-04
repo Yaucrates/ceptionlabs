@@ -35,7 +35,7 @@
                 <label for="Message" class="text-lg text-white font-bold">Message <span class="text-red-800">*</span></label>
                 <textarea id="Message" placeholder="We'd love to work with you Ception!" class="h-72 bg-neutral-850 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 p-3 text-neutral-200" ></textarea>
             </div>
-            <button class="mt-2 w-full h-12 bg-cyan-600 text-white rounded-xl">Send Message</button>
+            <button class="mt-2 w-full h-12 bg-cyan-600 text-white rounded-xl hover:bg-cyan-700 transition-colors duration-300">Send Message</button>
         </form>
     </div>
 </div>
