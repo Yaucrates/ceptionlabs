@@ -28,11 +28,11 @@
         <form class="w-full flex flex-col gap-2">
             <div class="gap-2 flex flex-col">
                 <label for="email" class="text-lg text-white font-bold">Email <span class="text-red-800">*</span></label>
-                <input id="email" type="text" class="bg-neutral-850 h-12 rounded-xl" />
+                <input id="email" type="text" placeholder="johndoe71@gmail.com" class="bg-neutral-850 h-12 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 p-3 text-neutral-200" />
             </div>
             <div class="gap-2 flex flex-col">
                 <label for="Message" class="text-lg text-white font-bold">Message <span class="text-red-800">*</span></label>
-                <textarea id="Message" class="h-72 bg-neutral-850 rounded-xl" ></textarea>
+                <textarea id="Message" placeholder="We'd love to work with you Ception!" class="h-72 bg-neutral-850 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 p-3 text-neutral-200" ></textarea>
             </div>
             <button class="mt-2 w-full h-12 bg-cyan-600 text-white rounded-xl">Send Message</button>
         </form>
