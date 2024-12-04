@@ -17,8 +17,8 @@
     };
 </script>
 
-<nav class="fixed w-full px-8 py-4 flex justify-between items-center z-10">
-    <a href="/" class="flex justify-center items-center">
+<nav class="fixed w-full px-8 py-4 flex justify-between items-center z-50">
+    <a href="/" onclick={() => { expanded = false; } } class="flex justify-center items-center">
         <div class="hidden sm:block"><NameLogo width={150} /></div>
         <div class="sm:hidden block"><SymbolicLogo width={40} /></div>
     </a>
