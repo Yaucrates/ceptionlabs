@@ -1,8 +1,21 @@
+<script>
+    import SymbolicLogo from "$lib/Logos/SymbolicLogo.svelte";
+</script>
+
 <div class="h-firstpage gap-4 flex justify-center items-center">
-    <div class="w-1/2 h-full p-20 relative">
-        <img src="TallCoolOwner.webp" alt="The Agency Owner" width="918" height="1528" class="h-full object-cover rounded-3xl"/>
-        <div class="bg-gradient-to-t from-ception-background/40 to-transparent w-[calc(100%-10rem)] h-[calc(100%-10rem)] top-20 left-20 rounded-3xl absolute"></div>
-        <div class="bg-gradient-to-b from-ception-background/40 to-transparent w-[calc(100%-10rem)] h-[calc(100%-10rem)] top-20 left-20 rounded-3xl absolute"></div>
+    <div class="w-1/2 h-full p-20">
+        <div class="w-full h-full group rounded-3xl overflow-hidden relative">
+            <img src="TallCoolOwner.webp" alt="The Agency Owner" width="918" height="1528" class="h-full object-cover rounded-3xl"/>
+            <div class="gap-2 p-10 flex flex-col absolute left-0 bottom-0 z-10">
+                <SymbolicLogo width={50}/>
+                <h1 class="uppercase text-3xl text-white font-black">Contact Us</h1>
+                <p class="text-xl text-neutral-200">No matter what you need, Ception's right here to help. We promise to get back to any emails within 24 hours!</p>
+            </div>
+
+            <div class="opacity-100 group-hover:opacity-0 bg-gradient-to-t from-ception-background/40 to-transparent w-full h-full top-0 left-0 absolute transition-opacity duration-300"></div>
+            <div class="opacity-0 group-hover:opacity-100 bg-gradient-to-t from-ception-cyan/20 to-transparent w-full h-full top-0 left-0 absolute transition-opacity duration-300"></div>
+            <div class="bg-gradient-to-b from-ception-background/40 to-transparent w-full h-full top-0 left-0 absolute transition-opacity duration-300"></div>
+        </div>
     </div>
 
     <div class="w-1/2 px-8 gap-8 flex flex-col justify-center items-center">
@@ -19,8 +32,9 @@
             </div>
             <div class="gap-2 flex flex-col">
                 <label for="Message" class="text-lg text-white font-bold">Message <span class="text-red-800">*</span></label>
-                <textarea id="Message" class="h-80 bg-neutral-850 rounded-xl" ></textarea>
+                <textarea id="Message" class="h-72 bg-neutral-850 rounded-xl" ></textarea>
             </div>
+            <button class="mt-2 w-full h-12 bg-cyan-600 text-white rounded-xl">Send Message</button>
         </form>
     </div>
 </div>
