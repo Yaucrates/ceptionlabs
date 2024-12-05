@@ -59,13 +59,8 @@
     });
 </script>
 
-<div class="w-full h-80 sm:h-96 md:h-[36rem] flex justify-end items-center relative overflow-hidden">
+<div class="w-full h-80 sm:h-96 md:h-[36rem] flex justify-end items-center relative">
     {#each slides as slide, index}
-        <img
-            src={slide.src}
-            alt={slide.alt}
-            class={getSlideClass(index) + " object-cover"}
-            style="aspect-ratio: auto; width: 100%; height: 100%;"
-        />
+        <img src={slide.src} alt={slide.alt} height={slide.height} width={slide.width} class={getSlideClass(index)} />
     {/each}
 </div>
