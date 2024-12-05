@@ -19,8 +19,8 @@
 
 <nav class="fixed w-full px-8 py-4 flex justify-between items-center z-50">
     <a href="/" onclick={() => { expanded = false; } } class="flex justify-center items-center">
-        <div class="hidden sm:block"><NameLogo width={150} /></div>
-        <div class="sm:hidden block"><SymbolicLogo width={40} /></div>
+        <div class="hidden sm:block" aria-label="Go back to Home Page"><NameLogo width={150} /></div>
+        <div class="sm:hidden block" aria-label="Go back to Home Page"><SymbolicLogo width={40} /></div>
     </a>
     <div class="gap-6 flex justify-center items-center relative">
         <BackgroundMusic />
