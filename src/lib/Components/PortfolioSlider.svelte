@@ -6,15 +6,21 @@
     const slides = [
         {
             src: "projects/DormDojoHomepage.webp",
-            alt: "Dorm Dojo Homepage"
+            alt: "Dorm Dojo Homepage",
+            width: "1600",
+            height: "1003",
         },
         {
             src: "projects/impart-education.webp",
-            alt: "Impart Education"
+            alt: "Impart Education",
+            width: "1600",
+            height: "1003",
         },
         {
             src: "projects/Personal-Portfolio.webp",
-            alt: "Personal Portfolio"
+            alt: "Personal Portfolio",
+            width: "1600",
+            height: "1003",
         }
     ];
 
@@ -55,6 +61,6 @@
 
 <div class="w-full h-80 sm:h-96 md:h-[36rem] flex justify-end items-center relative">
     {#each slides as slide, index}
-        <img src={slide.src} alt={slide.alt} loading="lazy" class={getSlideClass(index)} />
+        <img src={slide.src} alt={slide.alt} height={slide.height} width={slide.width} class={getSlideClass(index)} />
     {/each}
 </div>
