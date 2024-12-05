@@ -24,7 +24,7 @@
     </a>
     <div class="gap-6 flex justify-center items-center relative">
         <BackgroundMusic />
-        <a href="/contact" class="hidden xs:block text-white bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-3xl duration-300 transition-colors">
+        <a href="/contact" class="hidden xs:block text-white bg-cyan-700 hover:bg-cyan-800 px-4 py-2 rounded-3xl duration-300 transition-colors">
             Let's Talk
         </a>
         <button class="gap-4 flex justify-center items-center border-2 px-4 py-2 rounded-3xl border-neutral-800 text-white z-50" onclick={navToggle}>
