@@ -25,6 +25,11 @@
     ]
 </script>
 
+<svelte:head>
+	<title>Portfolio</title>
+	<meta name="description" content="Ception Labs designs are amazing. Take a look at them yourself!" />
+</svelte:head>
+
 <div class="flex flex-col">
     <div class="pb-8 pt-20 gap-16 flex flex-col sm:flex-row justify-center items-center">
         <div class="w-3/4 sm:w-1/4 gap-4 flex flex-col">

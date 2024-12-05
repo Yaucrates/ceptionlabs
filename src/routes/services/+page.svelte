@@ -3,6 +3,11 @@
     import TopRightArrow from "$lib/Logos/TopRightArrow.svelte";
 </script>
 
+<svelte:head>
+	<title>Services</title>
+	<meta name="description" content="Ception Labs offers a wide variety of services from Web Design and Development to Maintenence and Upgrades. Check out what we have to offer!" />
+</svelte:head>
+
 <main class="lg:h-[calc(100vh-76px)] flex flex-col lg:flex-row">
     <div class="w-full lg:w-1/2 min-h-[36rem] h-[36rem] lg:h-full lg:min-h-full border-t-[1px] border-ception-glassyWhite flex justify-center items-center overflow-clip relative">
         <MoonlightScene />

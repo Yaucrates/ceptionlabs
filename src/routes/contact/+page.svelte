@@ -2,6 +2,11 @@
     import SymbolicLogo from "$lib/Logos/SymbolicLogo.svelte";
 </script>
 
+<svelte:head>
+	<title>Contact</title>
+	<meta name="description" content="Ception Labs would love to hear from you. Let's get in touch!" />
+</svelte:head>
+
 <div class="lg:h-firstpage gap-4 flex flex-col lg:flex-row justify-center items-center">
     <div class="w-full lg:w-1/2 h-full p-8 sm:p-20">
         <div class="w-full h-full group rounded-3xl overflow-hidden relative">

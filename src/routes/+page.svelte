@@ -5,6 +5,11 @@
     import TradeMarkLogo from "$lib/Logos/TradeMarkLogo.svelte";
 </script>
 
+<svelte:head>
+	<title>Ception Labs</title>
+	<meta name="description" content="Transform your online presence with Ception Labs. We create stunning and user friendly websites tailored for your Business." />
+</svelte:head>
+
 <div class="gap-10 flex flex-col relative">
     <div class="lg:px-20 pt-24 h-firstpage pb-24 min-[570px]:pb-80 md:pb-96 gap-12 sm:gap-0 flex flex-col sm:flex-row justify-center min-[570px]:justify-around items-center">
         <h1 class="w-2/3 sm:w-5/12 text-white text-3xl xs:text-5xl lg:text-6xl font-semibold">
