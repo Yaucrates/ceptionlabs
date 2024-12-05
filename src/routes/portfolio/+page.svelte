@@ -6,21 +6,20 @@
         {
             title: "Dorm Dojo",
             subtitle: "Ecommerce Project",
-            description: "An E-Commerce site that hooked into the shopify API to make a headless storefront.",
+            description: "An E-Commerce site that hooked into the Shopify API to create a customized storefront.",
             href: "https://www.dormdojo.com/",
             src: "/projects/DormDojoHomepage.webp"
         },
         {
             title: "Personal Portfolio",
             subtitle: "Personal Portfolio",
-            description: "Created while the founder was attending the University of Tennessee Knoxville as a way to showcase his projects.",
+            description: "Developed a developer portfolio to showcase projects and work experience in an easy and accessible way.",
             href: "https://www.yousifabdulhussein.com/",
             src: "/projects/Personal-Portfolio.webp"
         },
         {
             title: "Impart Education",
-            subtitle: "May '24",
-            description: "Educational Platform",
+            subtitle: "Educational Platform",
             src: "/projects/impart-education.webp"
         },
     ]

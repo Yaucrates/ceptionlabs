@@ -2,14 +2,14 @@
     let {
         title,
         subtitle,
-        description,
+        description = null,
         href = null,
         src,
         target = "_blank",
     }: {
         title: string,
         subtitle: string,
-        description: string,
+        description?: string | null,
         href?: string | null,
         src: string,
         target?: string,
@@ -27,7 +27,7 @@
                 <path d="M13 6l6 6" />
             </svg>
         </div>
-        <p class="text-sm text-neutral-400"><span class="text-neutral-300">{subtitle}</span> -- {description}</p>
+        <p class="text-sm text-neutral-400"><span class="text-neutral-300">{subtitle}</span>{description ? ` -- ${description}` : ""}</p>
         <div class="w-full h-full hidden min-[400px]:flex justify-center relative">
             <img {src} class="h-5/6 translate-y-8 group-hover:translate-y-0 transition-all duration-300 absolute bottom-0" alt="alt"/>
         </div>
