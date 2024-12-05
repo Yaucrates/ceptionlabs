@@ -26,14 +26,14 @@
                 <path d="M0.5 52.5C809.5 23.5004 689 177.5 747.5 52.5C806 -72.5003 1003.5 129.5 1470 24.9999" stroke="#0891B2" stroke-width="50"/>
             </svg>
         </div>
-        <form class="w-full flex flex-col gap-2">
+        <form action="mailto:abdulhusseinyousifh@gmail.com" method="POST" class="w-full flex flex-col gap-2" enctype="text/plain">
             <div class="gap-2 flex flex-col">
                 <label for="email" class="text-lg text-white font-bold">Email <span class="text-red-800">*</span></label>
-                <input id="email" type="text" placeholder="johndoe71@gmail.com" class="bg-neutral-850 h-12 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 p-3 text-neutral-200" />
+                <input name="email" type="email" placeholder="johndoe71@gmail.com" class="bg-neutral-850 h-12 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 p-3 text-neutral-200" required />
             </div>
             <div class="gap-2 flex flex-col">
                 <label for="Message" class="text-lg text-white font-bold">Message <span class="text-red-800">*</span></label>
-                <textarea id="Message" placeholder="We'd love to work with you at Ception!" class="h-72 bg-neutral-850 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 p-3 text-neutral-200 resize-none" ></textarea>
+                <textarea name="Message" placeholder="We'd love to work with you at Ception!" class="h-72 bg-neutral-850 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 p-3 text-neutral-200 resize-none" required ></textarea>
             </div>
             <button class="mt-2 w-full h-12 bg-cyan-600 text-white rounded-xl hover:bg-cyan-700 transition-colors duration-300">Send Message</button>
         </form>
