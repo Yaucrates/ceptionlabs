@@ -61,6 +61,6 @@
 
 <div class="w-full h-80 sm:h-96 md:h-[36rem] flex justify-end items-center relative">
     {#each slides as slide, index}
-        <img src={slide.src} alt={slide.alt} height={slide.height} width={slide.width} class={getSlideClass(index)} />
+        <img src={slide.src} alt={slide.alt} loading="lazy" class={getSlideClass(index)} />
     {/each}
 </div>
