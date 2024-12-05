@@ -45,7 +45,7 @@
         <div class="w-8 xs:w-16 h-[26rem] shrink-0 block min-[1200px]:hidden"></div>
 
         <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 shrink-0 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/half-of-consumers-consider-a-companys-website-design-crucial-to-their-opinion-of-that-brand-301274695.html">
-            <h3 class="text-lg text-white font-semibold uppercase">Brand:</h3>
+            <h2 class="text-lg text-white font-semibold uppercase">Brand:</h2>
             <p class="text-white">
                 <span class="text-ception-cyan">50%</span>
                 of people say that their impression of a business
@@ -58,7 +58,7 @@
         </a>
 
         <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 shrink-0 gap-2 flex flex-col relative group" target="_blank" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">
-            <h3 class="text-lg text-white font-semibold uppercase">Conversion:</h3>
+            <h2 class="text-lg text-white font-semibold uppercase">Conversion:</h2>
             <p class="text-white">
                 <span class="text-ception-cyan">53%</span>
                 of visits are
@@ -73,7 +73,7 @@
         </a>
 
         <a class="w-[20rem] h-[26rem] px-6 py-8 border-2 border-neutral-900 shrink-0 gap-2 flex flex-col relative group" target="_blank" href="https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html">
-            <h3 class="text-lg text-white font-semibold uppercase">Discoverability:</h3>
+            <h2 class="text-lg text-white font-semibold uppercase">Discoverability:</h2>
             <p class="text-white">
                 <span class="text-ception-cyan">76%</span>
                 of people find businesses online

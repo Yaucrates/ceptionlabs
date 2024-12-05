@@ -15,7 +15,7 @@
     </div>
     <div class="w-full lg:w-1/2 flex flex-col border-t-[1px] border-l-0 lg:border-l-[1px] border-ception-glassyWhite box-border">
         <a href="/contact" class="p-8 min-h-[15.5rem] lg:min-h-0 lg:h-1/3 gap-4 flex flex-col justify-between lg:border-t-0 border-t-[1px] border-ception-glassyWhite box-border text-white uppercase">
-            <h3 class="text-xl font-medium">Maintenance & Hosting<br/>Service</h3>
+            <h2 class="text-xl font-medium">Maintenance & Hosting<br/>Service</h2>
             <div class="w-full flex justify-end items-center gap-4">
                 <p class="text-end">Reliable 24/7 hosting and <br class="hidden min-[460px]:block"/>maintenance.</p>
                 <div class="min-w-[60px] min-h-[60px] flex items-center justify-center">
@@ -24,7 +24,7 @@
             </div>
         </a>
         <a href="/contact" class="bg-cyan-900 p-8 min-h-[15.5rem] lg:min-h-0 lg:h-1/3 gap-4 flex flex-col justify-between text-white uppercase">
-            <h3 class="font-bold text-2xl">Web Design & Development<br/>Service</h3>
+            <h2 class="font-bold text-2xl">Web Design & Development<br/>Service</h2>
             <div class="w-full flex justify-end items-center gap-4">
                 <p class="text-end">Custom design and development to <br class="hidden min-[460px]:block"/>bring your website vision to life.</p>
                 <div class="min-w-[60px] min-h-[60px] flex items-center justify-center">
@@ -33,7 +33,7 @@
             </div>
         </a>
         <a href="/contact" class="p-8 min-h-[15.5rem] lg:min-h-0 lg:h-1/3 gap-4 flex flex-col justify-between text-white uppercase">
-            <h3 class="text-xl font-medium">Additional Services to Meet<br/>Your Needs</h3>
+            <h2 class="text-xl font-medium">Additional Services to Meet<br/>Your Needs</h2>
             <div class="w-full flex justify-end items-center gap-4">
                 <p class="text-end">Comprehensive support for any <br class="hidden min-[460px]:block"/>additional website requirements.</p>
                 <div class="min-w-[60px] min-h-[60px] flex items-center justify-center">
