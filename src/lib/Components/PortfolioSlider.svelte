@@ -26,17 +26,17 @@
 
     const positions = [
         {
-            height: "h-64 md:h-72 lg:h-80",
+            height: "h-64 md:h-72 lg:h-80 w-auto",
             translate: "translate-y-20 translate-x-6 sm:translate-y-0 sm:-translate-x-44 md:-translate-x-60 lg:-translate-x-96",
             zIndex: "z-[1]"
         },
         {
-            height: "h-72 md:h-80 lg:h-96",
+            height: "h-72 md:h-80 lg:h-96 w-auto",
             translate: "translate-y-12 translate-x-4 sm:translate-y-0 sm:-translate-x-24 md:-translate-x-40 lg:-translate-x-64",
             zIndex: "z-[2]"
         },
         {
-            height: "h-80 md:h-96 lg:h-[30rem]",
+            height: "h-80 md:h-96 lg:h-[30rem] w-auto",
             translate: "translate-y-0 -translate-x-0",
             zIndex: "z-[3]"
         }
@@ -61,6 +61,12 @@
 
 <div class="w-full h-80 sm:h-96 md:h-[36rem] flex justify-end items-center relative">
     {#each slides as slide, index}
-        <img src={slide.src} alt={slide.alt} loading="lazy" class={getSlideClass(index)} />
+        <img
+            src={slide.src}
+            alt={slide.alt}
+            height={slide.height}
+            width={slide.width}
+            class={getSlideClass(index)}
+        />
     {/each}
 </div>
