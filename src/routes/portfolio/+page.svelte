@@ -39,7 +39,7 @@
         <CaseStudyChart size={300} tw="hidden sm:block"/>
         <CaseStudyChart size={240} tw="sm:hidden block"/>
     </div>
-    <div class="px-16 py-16 gap-x-4 gap-y-12 grid grid-cols-1 lg:grid-cols-2">
+    <div class="px-8 sm:px-16 py-16 gap-x-4 gap-y-12 grid grid-cols-1 lg:grid-cols-2">
         {#each projects as project}
             <div class="w-full flex justify-center items-center">
                 <ProjectCard
