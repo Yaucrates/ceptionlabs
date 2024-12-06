@@ -1,7 +1,7 @@
 <footer class="border-t-[1px] flex flex-col border-ception-glassyWhite">
     <div class="px-12 sm:px-20 py-8 gap-16 lg:gap-0 flex flex-col lg:flex-row justify-between items-center">
         <div class="w-full lg:w-1/2 gap-8 flex flex-col">
-            <h3 class="text-xl uppercase font-bold text-neutral-100">Important Links:</h3>
+            <h2 class="text-xl uppercase font-bold text-neutral-100">Important Links:</h2>
             <div class="gap-x-24 gap-y-8 grid grid-cols-2">
                 <a href="/" class="text-xl text-neutral-200">Home</a>
                 <a href="/services" class="text-xl text-neutral-200">Services</a>
