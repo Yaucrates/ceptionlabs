@@ -8,6 +8,10 @@
 <svelte:head>
 	<title>Ception Labs</title>
 	<meta name="description" content="Transform your online presence with Ception Labs. We create stunning and user friendly websites tailored for your Business." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="use-credentials">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </svelte:head>
 
 <div class="gap-10 flex flex-col relative">
