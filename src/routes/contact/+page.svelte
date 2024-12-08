@@ -10,7 +10,7 @@
 <div class="lg:h-firstpage gap-4 flex flex-col lg:flex-row justify-center items-center">
     <div class="w-full lg:w-1/2 h-full p-8 sm:p-20">
         <div class="w-full h-full group rounded-3xl overflow-hidden relative">
-            <img src="TallCoolOwner.webp" alt="The Agency Owner" width="918" height="1528" class="h-full aspect-square object-cover rounded-3xl"/>
+            <img src="TallCoolOwnerWeb.webp" alt="The Agency Owner" width="918" height="1528" class="h-full aspect-square object-cover rounded-3xl"/>
             <div class="gap-2 p-4 xs:p-10 flex flex-col absolute left-0 bottom-0 z-10">
                 <SymbolicLogo width={50} tw="hidden xs:block"/>
                 <SymbolicLogo width={30} tw="xs:hidden block"/>
