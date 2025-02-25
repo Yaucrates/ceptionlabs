@@ -4,6 +4,20 @@
 
     let projects = [
         {
+            title: "Impart Education",
+            subtitle: "Educational Platform",
+            description: "An online virtual school for higher education.",
+            href: "https://www.imparteducation.com/",
+            src: "/projects/impart-education-new.webp"
+        },
+        {
+            title: "Calisthenics Dojo",
+            subtitle: "Documention Project",
+            description: "A website for finding Calisthenics information as well as an affiliate marketing page.",
+            href: "https://www.calidojo.com/",
+            src: "/projects/CaliDojo.webp"
+        },
+        {
             title: "Dorm Dojo",
             subtitle: "Ecommerce Project",
             description: "An E-Commerce site that hooked into the Shopify API to create a customized storefront.",
@@ -20,6 +34,7 @@
         {
             title: "Impart Education",
             subtitle: "Educational Platform",
+            description: "Outdated Project",
             src: "/projects/impart-education.webp"
         },
     ]
